@@ -1,0 +1,89 @@
+:root {
+  /* Color palette - clean student project aesthetic */
+  --bg-main: #f7f7f5;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+  --bg-input-hover: #fafafa;
+  --bg-subtle: #f0f0ed;
+
+  /* Soft lemon-yellow accent */
+  --lemon-accent: #ddeb55;
+  --lemon-accent-hover: #d2e043;
+  --lemon-accent-active: #c5d438;
+  --lemon-accent-light: #f7fae1;
+  --lemon-accent-border: #ccd84b;
+
+  /* Text colors */
+  --text-primary: #191c1e;
+  --text-secondary: #575e65;
+  --text-muted: #858d95;
+  --text-on-accent: #191c1e;
+
+  /* Borders & lines */
+  --border-light: #e4e6ea;
+  --border-strong: #d2d5dc;
+  --border-focus: #191c1e;
+
+  /* Status */
+  --color-error: #dc2626;
+  --color-error-bg: #fef2f2;
+  --color-error-border: #fecaca;
+  --color-warning: #92400e;
+  --color-warning-bg: #fefce8;
+  --color-warning-border: #fde68a;
+  --color-success: #15803d;
+
+  /* Radii & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+
+  /* Fonts */
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
